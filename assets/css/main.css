@@ -1,0 +1,112 @@
+:root {
+  --serif: "Cormorant Garamond", serif;
+  --sans: "Proza Libre", sans-serif;
+  --dark: #242424;
+  --light: #fff;
+  --red: #ef6351;
+  --teal: #55828b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark);
+}
+
+/* nav styling */
+nav {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  margin: 0 20px;
+  position: fixed;
+  z-index: 1;
+}
+.logo {
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--light);
+}
+ul {
+  list-style: none;
+}
+.nav-links {
+  color: var(--light);
+  text-decoration: none;
+  margin: 0 20px;
+  opacity: 50%;
+}
+.nav-links:hover {
+  opacity: 100%;
+  color: var(--light);
+}
+
+/* main section styling */
+main {
+  background-image: url("../images/background-images/cloud-trees-flipped-cropped.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: var(--sans);
+  opacity: 80%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+}
+.card {
+  color: var(--light);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 20px;
+  max-width: 40%;
+  height: auto;
+  border-radius: 20px;
+}
+.bio-card-container {
+  margin: 100px auto;
+}
+.card:hover {
+  opacity: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-image {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.figure {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.img {
+  flex: 2;
+}
+
+/* card content styling */
+.card-content {
+  height: auto;
+}
+.subtitle {
+  color: var(--red);
+}
+
+/* footer styling */
+.footer-link {
+  font-size: 2rem;
+  margin: 24px;
+  color: var(--light);
+  text-decoration: none;
+  opacity: 50%;
+}
+.footer-link:hover {
+  opacity: 100%;
+  color: var(--light);
+}
+
+@media screen and (min-width: 767px) {
+}

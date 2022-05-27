@@ -1,0 +1,70 @@
+:root {
+  --serif: "Cormorant Garamond", serif;
+  --sans: "Proza Libre", sans-serif;
+  --dark: #242424;
+  --light: #fff;
+  --red: #ce5140;
+  --teal: #55828b;
+}
+
+main {
+  height: auto;
+}
+
+.card {
+  opacity: 80%;
+}
+.card:hover {
+  opacity: 100%;
+}
+.second-img {
+  margin: 24px auto;
+}
+
+.project-tabs {
+  margin-top: 100px;
+  color: var(--red);
+}
+.project-tabs.is-active {
+  color: var(--red);
+}
+
+section {
+  border: 1px solid black;
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 2rem;
+}
+
+.media-content a {
+  font-weight: 600;
+}
+.media-content a:hover {
+  color: var(--light);
+}
+
+.tech {
+  text-align: right;
+  margin-top: 16px;
+  color: var(--dark);
+  opacity: 60%;
+}
+
+.tabs-with-content {
+  color: var(--light);
+}
+.project-tabs li a {
+  color: var(--light);
+}
+#tabs-with-content .tabs:not(:last-child) {
+  margin-bottom: 0;
+}
+#tabs-with-content .tab-content {
+  padding: 1rem;
+  display: none;
+}
+#tabs-with-content .tab-content.is-active {
+  display: block;
+}

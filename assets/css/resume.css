@@ -1,0 +1,35 @@
+:root {
+  --serif: "Cormorant Garamond", serif;
+  --sans: "Proza Libre", sans-serif;
+  --dark: #242424;
+  --light: #fff;
+  --red: #ef6351;
+  --teal: #55828b;
+}
+
+main {
+  height: auto;
+  min-height: 100vh;
+  color: var(--light);
+}
+
+.resume-container {
+  font-family: var(--serif);
+  font-size: 3rem;
+  padding-top: 100px;
+}
+.skill,
+.bar {
+  font-size: 5rem;
+  margin: 20px;
+  opacity: 30%;
+}
+.skill:hover,
+.bar:hover {
+  opacity: 100%;
+}
+
+.coming-soon {
+  margin: 100px auto;
+  font-size: 2rem;
+}
