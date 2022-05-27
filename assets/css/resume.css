@@ -7,6 +7,10 @@
   --teal: #55828b;
 }
 
+.nav {
+  margin-top: 13px;
+}
+
 main {
   height: auto;
   min-height: 100vh;
