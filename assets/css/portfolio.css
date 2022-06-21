@@ -9,6 +9,7 @@
 
 main {
   height: auto;
+  min-height: 100vh;
 }
 
 .card {
@@ -21,16 +22,16 @@ main {
   margin: 24px auto;
 }
 
+.tabs {
+  height: auto;
+}
+
 .project-tabs {
-  margin-top: 100px;
+  margin-top: 50px;
   color: var(--red);
 }
 .project-tabs.is-active {
   color: var(--red);
-}
-
-section {
-  border: 1px solid black;
 }
 
 .title {
@@ -67,4 +68,35 @@ section {
 }
 #tabs-with-content .tab-content.is-active {
   display: block;
+}
+.project-tabs-hidden li a {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .project-tabs-hidden li a {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tabs2,
+  .project-tabs-hidden {
+    height: auto;
+  }
+  .project-tabs li {
+    padding: auto 0;
+  }
+  .project-tabs li a {
+    display: none;
+  }
+
+  .tabs2 {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    height: 100px;
+  }
 }

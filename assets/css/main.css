@@ -1,6 +1,7 @@
 :root {
   --serif: "Cormorant Garamond", serif;
   --sans: "Proza Libre", sans-serif;
+  --title: "Cormorant SC", serif;
   --dark: #242424;
   --light: #fff;
   --red: #ef6351;
@@ -12,50 +13,6 @@
   padding: 0;
 }
 
-body {
-  background-color: var(--dark);
-}
-
-/* nav styling */
-nav {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  margin: 0 20px;
-  position: fixed;
-  z-index: 1;
-}
-.logo {
-  margin: 20px;
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--light);
-}
-ul {
-  list-style: none;
-}
-.nav-links {
-  color: var(--light);
-  text-decoration: none;
-  margin: 0 20px;
-  opacity: 50%;
-}
-.nav-links:hover {
-  opacity: 100%;
-  color: var(--light);
-}
-
-/* main section styling */
-main {
-  background-image: url("../images/background-images/cloud-trees-flipped-cropped.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  font-family: var(--sans);
-  opacity: 80%;
-  height: auto;
-  width: auto;
-  z-index: -1;
-}
 .card {
   color: var(--light);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
@@ -109,4 +66,7 @@ main {
 }
 
 @media screen and (min-width: 767px) {
+  .card {
+    min-width: 320px;
+  }
 }

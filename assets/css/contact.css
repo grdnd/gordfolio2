@@ -1,23 +1,65 @@
+:root {
+  --serif: "Cormorant Garamond", serif;
+  --sans: "Proza Libre", sans-serif;
+  --title: "Cormorant SC", serif;
+  --dark: #242424;
+  --light: #fff;
+  --red: #ef6351;
+  --teal: #55828b;
+}
+
 main {
-  height: 100vh;
+  height: 875px;
 }
+
+.columns {
+  padding: 50px;
+  width: 100vw;
+  margin-top: 24px;
+}
+
+.input-container {
+  width: 100%;
+  height: 600px;
+}
+
 .form-container {
-  width: 100%;
-  height: 100%;
+  height: 90%;
+  width: inherit;
+  margin: 100px auto 0 auto;
+  padding: 0;
 }
+
 .form {
-  width: 100%;
+  width: inherit;
+  height: inherit;
 }
+
 .field {
+  width: inherit;
+  padding: 24px 24px 48px 24px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  height: 450px;
+}
+
+.contact {
+  font-size: 5vw;
+  font-family: var(--title);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.control {
   width: 100%;
 }
-.control {
-  width: 70%;
-}
+
 .input,
 .textarea {
-  background-color: transparent;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
 }
+
 .input::placeholder,
 .textarea::placeholder {
   color: var(--light);
@@ -29,4 +71,75 @@ main {
 .icon {
   padding: 16px;
   margin: 16px 0;
+}
+
+.is-one-third {
+  height: 400px;
+  margin-top: 140px;
+}
+.box {
+  background: none;
+  height: inherit;
+  width: inherit;
+  box-shadow: none;
+}
+.contact-links {
+  height: auto;
+}
+.socialIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  height: auto;
+}
+.social-icon-link {
+  width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .columns {
+    padding: 0 24px 0 24px;
+  }
+  .form-container,
+  .form,
+  .field {
+    height: 450px;
+  }
+  .is-one-third {
+    height: auto;
+    width: 100%;
+    margin-top: 200px;
+    padding: 0;
+  }
+  .box {
+    height: 90px;
+  }
+  .socialIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48px;
+    width: auto;
+    font-size: 100px;
+  }
+  .contact-links {
+    margin: 0 auto;
+    width: 500px;
+    height: 48px;
+  }
+  .social-icon-link {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  .social-icon-link-text {
+    display: none;
+  }
+  .input-container {
+    height: 500px;
+    padding: 0 24px;
+  }
+  .form-container {
+    margin-top: 0;
+  }
 }

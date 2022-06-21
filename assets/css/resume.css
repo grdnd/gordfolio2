@@ -1,14 +1,11 @@
 :root {
   --serif: "Cormorant Garamond", serif;
   --sans: "Proza Libre", sans-serif;
+  --title: "Cormorant SC", serif;
   --dark: #242424;
   --light: #fff;
   --red: #ef6351;
   --teal: #55828b;
-}
-
-.nav {
-  margin-top: 13px;
 }
 
 main {
@@ -18,15 +15,37 @@ main {
 }
 
 .resume-container {
-  font-family: var(--serif);
-  font-size: 3rem;
-  padding-top: 100px;
+  font-family: var(--title);
+  padding-top: 15px;
+  display: inline-block;
+  width: 100vw;
+}
+
+.front-end-cont,
+.back-end-cont {
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  font-size: 5vw;
+  backdrop-filter: blur(2px);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.responsive:hover {
+  color: var(--red);
+}
+
+.is-half {
+  margin: 0 auto;
+  padding: 50px;
 }
 .skill,
 .bar {
-  font-size: 5rem;
-  margin: 20px;
-  opacity: 30%;
+  font-size: 2.5rem;
+  -webkit-text-stroke-width: 0px;
+  opacity: 60%;
 }
 .skill:hover,
 .bar:hover {
@@ -34,6 +53,7 @@ main {
 }
 
 .coming-soon {
+  font-family: var(--title);
   margin: 100px auto;
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
