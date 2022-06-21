@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gordtfolio</title>
+    <title>gordfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -22,93 +22,194 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Proza+Libre&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+SC:wght@500&family=Proza+Libre&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <link rel="stylesheet" href="./assets/css/nav-footer.css" />
   </head>
+
   <body>
+    <div id="bg">
+      <img
+        src="./assets/images/background-images/cloud-trees-flipped-cropped.jpg"
+        alt="cloudy mountain with trees reflected"
+      />
+    </div>
+
     <!-- Nav Bar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./index.html">
+          <h1 class="logo">
+            <span class="gord">gord</span><span class="folio">folio</span>
+          </h1>
+        </a>
 
-    <nav
-      class="nav is-flex is-justify-content-space-between is-align-items-center"
-    >
-      <div class="nav-logo">
-        <a href="index.html" class="logo">gordtfolio</a>
+        <a
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarDropdown"
+          onClick="toggleBurger()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="nav-links-wrapper">
-        <ul class="nav-items is-flex is-justify-content-space-between">
-          <li class="nav-item">
-            <a href="index.html" class="nav-links">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="./pages/portfolio.html" class="nav-links">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="./pages/contact.html" class="nav-links">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="./pages/resume.html" class="nav-links">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Main -->
-    <main class="is-flex is-justify-content-center is-align-items-start">
-      <div
-        class="bio-card-container is-flex is-justify-content-center is-align-items-center"
-      >
-        <div class="card top-spacer">
-          <div class="card-image">
-            <figure class="image">
-              <img src="./assets/images/pfp.JPG" alt="Placeholder image" />
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4 mb-0">Gordon Do</p>
-                <a href="github.com/grdnd" class="subtitle is-6"
-                  >github@grdnd</a
-                >
+      <div id="navbarBasicDropdown" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="./index.html" class="navbar-item"> Home </a>
+
+          <a href="./pages/about-me.html" class="navbar-item"> About Me </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"></a>
+
+            <div class="navbar-dropdown">
+              <a href="./pages/portfolio.html" class="navbar-item">
+                Portfolio
+              </a>
+              <a href="./pages/resume.html" class="navbar-item"> Resume </a>
+              <hr class="navbar-divider" />
+              <a href="./pages/contact.html" class="navbar-item"> Contact </a>
+              <div class="social-links is-flex is-justify-content-space-around">
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/in/gord-folio/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a class="social-link" href="https://github.com/grdnd"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a class="social-link" href="mailto:gordfolio@gmail.com"
+                  ><i class="fa-solid fa-envelope-open-text"></i
+                ></a>
               </div>
-            </div>
-            <div class="content">
-              <p>
-                I am an aspiring web developer based in Los Angeles and Orange
-                County, California.
-                <br /><br /><br /><br />
-                For as long as I can remember, I have been infatuated with art
-                in every form. I have seen firsthand the ways self-expression
-                propels individuals to become the greatest versions of
-                themselves. As a full stack web developer,<br />
-                I wish to accomplish my dream of helping creators bring their
-                visions to life.
-              </p>
-              <a href="#">#CSS</a>
-              <a href="#">#responsive</a>
-              <a href="#">#builtwithBulma</a>
             </div>
           </div>
         </div>
       </div>
+    </nav>
+
+    <main class="hero-cont">
+      <section
+        class="hero is-flex is-justify-content-center is-align-items-center"
+      >
+        <a href="./pages/about-me.html">
+          <h1 class="clearText">
+            <span class="fade">g</span><span class="fade">o</span
+            ><span class="fade fader">r</span><span class="fade">d</span
+            ><span class="fade">o</span>
+          </h1>
+        </a>
+      </section>
     </main>
 
-    <!-- Footer-->
-    <footer>
-      <div class="footer-links is-flex is-justify-content-center">
-        <a class="footer-link" href="https://www.linkedin.com/in/gord-folio/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a class="footer-link" href="github.com/grdnd"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a class="footer-link" href="https://www.linkedin.com/in/gord-folio/"
-          ><i class="fa-solid fa-envelope-open-text"></i
-        ></a>
+    <!------------------------- Footer ------------------------------>
+
+    <div
+      class="footer-container is-flex is-justify-content-center is-flex-direction-column"
+    >
+      <section
+        class="footer-signup is-flex is-align-items-center is-flex-direction-column"
+      >
+        <p class="footer-signup-heading">
+          Leave your email if you would like to stay in touch!
+        </p>
+        <div class="input-areas">
+          <form action="">
+            <div
+              class="btn-width is-flex is-justify-content-start align-items-center"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                class="footer-input"
+              />
+              <button class="btn btn--outline btn--large signup" to="/contact">
+                Sign-up
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div class="footer-links">
+        <div class="footer-link-wrapper">
+          <div
+            class="footer-link-items is-flex is-flex-direction-column is-align-items-center"
+          >
+            <h2>About</h2>
+            <a href="./pages/about-me.html">About Me</a>
+            <a href="./pages/resume.html">Resume</a>
+            <a href="pages/portfolio.html">Portfolio</a>
+          </div>
+          <div
+            class="footer-link-items border-right is-flex is-flex-direction-column is-align-items-center"
+          >
+            <h2>Contact</h2>
+            <a href="./pages/contact.html">Contact Me</a>
+            <a href="./pages/contact.html">gordfolio@gmail.com</a>
+            <p>( ### ) ### - ####</p>
+          </div>
+        </div>
       </div>
-    </footer>
-    <script src=""></script>
+      <section class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <a class="navbar-item" href="./index.html">
+              <h1 class="logo">
+                <span class="gord">gord</span><span class="folio">folio</span>
+              </h1>
+            </a>
+          </div>
+
+          <small class="website-rights">
+            © 2022 Gordon Do | Orange County, California
+          </small>
+          <div class="social-icons">
+            <a
+              class="social-icon-link linkedIn"
+              href="https://www.linkedin.com/in/gord-folio/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              class="social-icon-link github"
+              href="https://github.com/grdnd"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              class="social-icon-link email"
+              href="mailto:gordfolio@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/navbar.js"></script>
   </body>
 </html>
