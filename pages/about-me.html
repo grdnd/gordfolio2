@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gordtfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+      integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+SC:wght@500&family=Proza+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/nav-footer.css" />
+    <link rel="stylesheet" href="../assets/css/about-me.css" />
+  </head>
+
+  <body>
+    <div id="bg">
+      <img
+        src="../assets/images/background-images/cloud-trees-flipped-cropped.jpg"
+        alt="cloudy mountain with trees reflected"
+      />
+    </div>
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <h1 class="logo">
+            <span class="gord">gord</span><span class="folio">folio</span>
+          </h1>
+        </a>
+
+        <a
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarDropdown"
+          onClick="toggleBurger()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicDropdown" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="../index.html" class="navbar-item"> Home </a>
+
+          <a href="./about-me.html" class="navbar-item"> About Me </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"></a>
+
+            <div class="navbar-dropdown">
+              <a href="./portfolio.html" class="navbar-item"> Portfolio </a>
+              <a href="./resume.html" class="navbar-item"> Resume </a>
+              <hr class="navbar-divider" />
+              <a href="./contact.html" class="navbar-item"> Contact </a>
+              <div class="social-links is-flex is-justify-content-space-around">
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/in/gord-folio/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a class="social-link" href="https://github.com/grdnd"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a class="social-link" href="mailto:gordfolio@gmail.com"
+                  ><i class="fa-solid fa-envelope-open-text"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------------- Main ------------------------->
+
+    <main class="main">
+      <div class="topline is-flex is-justify-content-center">
+        <h1 class="exp columns">
+          <span class="big column"><p class="expression">Expression</p></span>
+          <span class="small column"><p class="over">Over</p></span>
+          <span class="big column"><p class="expression">Impression</p></span>
+        </h1>
+      </div>
+      <div class="columns bio-col is-vcentered">
+        <div
+          class="column imagecol is-one-third is-flex is-justify-content-center"
+        >
+          <div class="card">
+            <div class="image-wrap">
+              <img src="../assets/images/pfp.JPG" />
+            </div>
+          </div>
+        </div>
+        <div class="column bios">
+          <div class="bio-card">
+            <div class="card-cont">
+              <p>
+                Gordon Do is an aspiring web developer based in Los Angeles and
+                Orange County, Southern California.
+              </p>
+            </div>
+          </div>
+          <div class="bio-card">
+            <div class="card-cont">
+              <p>
+                For as long as he can remember, he has been infatuated with art,
+                and meeting ambitious creators. He has seen firsthand the ways
+                self-expression propels individuals to become the greatest
+                versions of themselves.
+              </p>
+            </div>
+          </div>
+          <div class="bio-card is-flex-shrink-2">
+            <div class="card-cont">
+              <p>
+                As a full stack web developer, he wish to accomplish his dream
+                of helping creators bring their visions to life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!------------------------- Footer ------------------------------>
+
+    <div
+      class="footer-container is-flex is-justify-content-center is-flex-direction-column"
+    >
+      <section
+        class="footer-signup is-flex is-align-items-center is-flex-direction-column"
+      >
+        <p class="footer-signup-heading">
+          Leave your email if you would like to stay in touch!
+        </p>
+        <div class="input-areas">
+          <form action="">
+            <div
+              class="btn-width is-flex is-justify-content-start align-items-center"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                class="footer-input"
+              />
+              <button class="btn btn--outline btn--large signup" to="/contact">
+                Sign-up
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div class="footer-links">
+        <div class="footer-link-wrapper">
+          <div
+            class="footer-link-items is-flex is-flex-direction-column is-align-items-center"
+          >
+            <h2>About</h2>
+            <a href="./pages/about-me.html">About Me</a>
+            <a href="./pages/resume.html">Resume</a>
+            <a href="pages/portfolio.html">Portfolio</a>
+          </div>
+          <div
+            class="footer-link-items border-right is-flex is-flex-direction-column is-align-items-center"
+          >
+            <h2>Contact</h2>
+            <a href="./pages/contact.html">Contact Me</a>
+            <a href="./pages/contact.html">gordfolio@gmail.com</a>
+            <p>( ### ) ### - ####</p>
+          </div>
+        </div>
+      </div>
+      <section class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <a class="navbar-item" href="./index.html">
+              <h1 class="logo">
+                <span class="gord">gord</span><span class="folio">folio</span>
+              </h1>
+            </a>
+          </div>
+
+          <small class="website-rights">
+            © 2022 Gordon Do | Orange County, California
+          </small>
+          <div class="social-icons">
+            <a
+              class="social-icon-link linkedIn"
+              href="https://www.linkedin.com/in/gord-folio/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              class="social-icon-link github"
+              href="https://github.com/grdnd"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              class="social-icon-link email"
+              href="mailto:gordfolio@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../assets/js/navbar.js"></script>
+  </body>
+</html>
