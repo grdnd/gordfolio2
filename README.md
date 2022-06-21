@@ -1,5 +1,5 @@
 ## Updated Portfolio 2
 
-![gordfolio2](https://user-images.githubusercontent.com/93315369/170679805-9ad14219-26db-41f4-a30c-d514c9fc5b2f.png)
+![gordfolio2-preview](https://user-images.githubusercontent.com/93315369/174704143-196a27ca-bce1-435b-89b2-d8865956e788.png)
 
 
